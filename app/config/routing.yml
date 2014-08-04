@@ -1,0 +1,12 @@
+trigger:
+    resource: "@TriggerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pipeline:
+    resource: "@PipelineBundle/Controller/"
+    prefix:   /
+
+pipeline_track:
+    path:     /tracker/{name}/{count}/{direction}
+    defaults: { _controller: PipelineBundle:Tracker:track }
+

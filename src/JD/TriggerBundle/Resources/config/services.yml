@@ -1,0 +1,7 @@
+parameters:
+#    trigger.example.class: JD\TriggerBundle\Example
+
+services:
+#    trigger.example:
+#        class: %trigger.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
