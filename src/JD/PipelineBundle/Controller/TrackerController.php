@@ -37,7 +37,7 @@ class TrackerController extends Controller
     private function emitTrackEvent($thing)
     {
         $event = new TrackEvent($thing);
-        $this->dispatcher->dispatch('thing.tracked', $event);
+        $this->get('event_dispatcher')->dispatch('thing.tracker', $event);
     }
 
     private function declareThing($name)
