@@ -5,5 +5,5 @@ services:
     trigger.example:
         class: %trigger.example.class%
         tags:
-            - { name: kernel.event_listener, event: thing.tracker }
+            - { name: kernel.event_listener, event: thing.tracker, method: onThingTracked }
 
